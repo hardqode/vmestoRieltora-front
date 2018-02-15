@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SSP-bold';
+    src: url('../fonts/SourceSansPro-Bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'SSP';
+    src: url('../fonts/SourceSansPro-Regular.otf');
+    font-style: normal;
+    font-weight: bold;
+}
