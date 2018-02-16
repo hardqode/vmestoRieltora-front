@@ -7,14 +7,14 @@ body {
 
 a {
     color: rgb(113, 66, 183);
-    border-bottom:1px solid rgba(113, 66, 183,0.2);
-    transition:  all 0.3s;
+    border-bottom: 1px solid rgba(113, 66, 183, 0.2);
+    transition: all 0.3s;
 }
 
 a:hover {
     text-decoration: none;
     color: rgb(113, 66, 183);
-    border-bottom-color: rgba(113, 66, 183,1);
+    border-bottom-color: rgba(113, 66, 183, 1);
 }
 
 .font-weight-bold {
@@ -176,10 +176,6 @@ header .phone {
 section {
     padding-top: 150px;
     color: rgb(55, 55, 55);
-}
-
-section svg {
-    fill: #fff;
 }
 
 .main-header {
@@ -487,6 +483,16 @@ section svg {
     opacity: 1;
 }
 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: rgb(113, 66, 183);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: rgba(113, 66, 183, 0.4);
+    width: 8px;
+    height: 8px;
+}
+
 /*slider end*/
 
 .modal-dialog {
@@ -547,9 +553,11 @@ input.form-control:focus {
 .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: none;
 }
-.custom-control-label{
+
+.custom-control-label {
     font-size: 14px;
 }
+
 .custom-control-label::before {
     width: 18px;
     border-radius: 4px;
@@ -587,17 +595,40 @@ footer a {
     margin-bottom: 24px;
 }
 
-.Инвесторам {
-    font-family: "SourceSansPro";
-    position: absolute;
-    left: 682.937px;
-    top: 8486.608px;
-    z-index: 323;
-}
-
 footer a:hover {
     color: #000;
     text-decoration: none;
     transition: all 0.3s;
     border-bottom: 0 solid rgba(28, 70, 153, 1);
+}
+
+
+/*для слайдера картинки*/
+.different-image-container{
+    position: relative;
+    background-image: url("../images/zbs.png");
+    background-size: cover;
+    min-height: 320px;
+    min-width: 487px;
+}
+.different-image{
+    position: absolute;
+    background-image: url("../images/huevo.png");
+    background-size: cover;
+    width: 0;
+    left: 0;
+    height:100%;
+    max-width: 100%;
+}
+.different-image-container span{
+    content: ' ';
+    background-image: url("../images/polz.png");
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left:-27px;
+    top:40%;
+}
+.different-image-container span.is-pointer-down {
+    opacity: 0.7;
 }
