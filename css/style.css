@@ -297,7 +297,7 @@ section {
 }
 
 .video-gallery:hover:before {
-    opacity: 0;
+    opacity: 0.3;
     transition: all 0.3s;
 }
 
@@ -602,33 +602,35 @@ footer a:hover {
     border-bottom: 0 solid rgba(28, 70, 153, 1);
 }
 
-
 /*для слайдера картинки*/
-.different-image-container{
+.different-image-container {
     position: relative;
     background-image: url("../images/zbs.png");
     background-size: cover;
     min-height: 320px;
     min-width: 487px;
 }
-.different-image{
+
+.different-image {
     position: absolute;
     background-image: url("../images/huevo.png");
     background-size: cover;
     width: 28px;
     left: 0;
-    height:100%;
+    height: 100%;
     max-width: 100%;
 }
-.different-image-container span{
+
+.different-image-container span {
     content: ' ';
     background-image: url("../images/polz.png");
     width: 56px;
     height: 56px;
     position: absolute;
-    left:0;
-    top:40%;
+    left: 0;
+    top: 40%;
 }
+
 .different-image-container span.is-pointer-down {
     opacity: 0.7;
 }
