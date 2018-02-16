@@ -715,16 +715,16 @@
                 </h1>
             </div>
             <div class="col-8 mx-auto mt-4">
-                <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk" frameborder="0" class="video-block"
+                <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk"  frameborder="0" class="video-block"
                         allowfullscreen></iframe>
-                <p>Текст вопроса или название видео</p>
+                <p class="video-description">1st video</p>
             </div>
             <div class="col-8 mx-auto videos">
                 <div class="row">
-                    <div class="col-3 video-gallery active"><img src="./images/capital-region.png" alt=""></div>
-                    <div class="col-3 video-gallery"><img src="./images/capital-region.png" alt=""></div>
-                    <div class="col-3 video-gallery"><img src="./images/capital-region.png" alt=""></div>
-                    <div class="col-3 video-gallery"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery active" uLink="https://www.youtube.com/embed/SPauxWv1Rnk" description="1st video"> <img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/i6hhBVXQK2o" description="2nd video"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/IadZs2u_jy0" description="3rd video"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/a0vgIRaFnZA" description="4th video"><img src="./images/capital-region.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -833,6 +833,20 @@
     $draggable.on( 'pointerMove', function( event, pointer, moveVector ) {
         var thisx = moveVector.x;
         $('.different-image').css('width', widthSlider + thisx + 'px');
+    })
+</script>
+<!--video gallery-->
+<script>
+    $('.video-gallery').on('click',function () {
+        var uLink = $(this).attr('uLink');
+        var description = $(this).attr('description');
+
+        $('.video-gallery.active').removeClass('active');
+        $(this).addClass('active');
+
+        $('.video-block').attr('src',uLink);
+        $('.video-description').text(description);
+
     })
 </script>
 </body>
