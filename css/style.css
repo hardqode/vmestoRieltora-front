@@ -25,7 +25,7 @@ a:hover {
 .btn {
     border-radius: 2rem;
     transition: all 0.3s;
-    font-family: SSP-bold;
+    font-family: SSP;
 }
 
 .btn:hover {
@@ -572,14 +572,14 @@ footer {
     background-color: #f3f3f3;
     font-size: 15px;
     color: #9a9a9a;
-    padding-top: 48px;
-    padding-bottom: 42px;
+    padding-top: 44px;
+    padding-bottom: 40px;
     margin-top: 145px;
 }
 
 footer a {
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 2;
     color: rgb(39, 39, 39);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
