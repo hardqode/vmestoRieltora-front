@@ -35,13 +35,15 @@
                             </div>
                         </div>
                         <div class="col-md-12 mb-4">
-                            <input type="text" class="form-control" id="validationCustom03" required data-inputmask="'mask': '+7 (999) 999-99-99'">
+                            <input type="text" class="form-control" id="validationCustom03" required
+                                   data-inputmask="'mask': '+7 (999) 999-99-99'">
                             <div class="invalid-feedback up">
                                 Некорректный ввод данных
                             </div>
                         </div>
                         <div class="col-md-12 mb-4">
-                            <input type="text" class="form-control" id="validationCustom04" required data-inputmask="'alias': 'email'">
+                            <input type="text" class="form-control" id="validationCustom04" required
+                                   data-inputmask="'alias': 'email'">
                             <div class="invalid-feedback up">
                                 Некорректный ввод данных
                             </div>
@@ -50,7 +52,7 @@
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1" required>
                                 <label class="custom-control-label" for="customCheck1">
-                                    Согласен на обработку <a href="#" class="check-link">персональных данных</a>
+                                    Согласен c <a href="#" class="check-link">обработкой персональных данных</a>
                                 </label>
                                 <div class="invalid-feedback ">
                                     Вы должны принять условия соглашения
@@ -58,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-purple mt-4">Отправить</button>
+                    <button type="submit" class="btn btn-lg btn-purple mb-3">Отправить</button>
                 </form>
 
             </div>
@@ -73,7 +75,8 @@
             <div class="col"><img src="./images/svg/login.svg" class="mr-1 mb-1" alt="" width="16"> <a href="">
                 Войти</a></div>
             <div class="col-3 ml-auto text-right"><a href="#" class="phone mb-3">+7 (495) 144-95-29</a><br>
-                <img src="./images/svg/phone.svg" width="16" class="mr-2" alt=""><a href="#">Заказать обратный
+                <img src="./images/svg/phone.svg" width="16" class="mr-2" alt=""><a href="#" data-toggle="modal"
+                                                                                    data-target="#exampleModal">Заказать обратный
                     звонок</a></div>
         </div>
         <div class="row">
@@ -93,7 +96,8 @@
             </div>
             <div class="col-3 ml-auto text-center"><img src="./images/svg/analytics.svg" alt="" width="68" class="mb-2">
                 <br>
-                <a href="#" class="border-bottom-primary-white zakaz">Заказать бесплатную оценку квартиры</a><br>
+                <a href="#" class="border-bottom-primary-white zakaz" data-toggle="modal"
+                   data-target="#exampleModal">Заказать бесплатную оценку квартиры</a><br>
                 <span style="top: 24px; position:relative;font-size:14px">пришлём в течение 2-х часов</span>
             </div>
         </div>
@@ -221,15 +225,18 @@
                     </div>
                     <div class="col-3">
                         <p class="price">9 900 ₽</p>
-                        <button class="btn btn-lg btn-purple">заключить договор</button>
+                        <button class="btn btn-lg btn-purple" data-toggle="modal"
+                                data-target="#exampleModal">заключить договор</button>
                     </div>
                     <div class="col-3">
                         <p class="price">49 900 ₽</p>
-                        <button class="btn btn-lg btn-purple">заключить договор</button>
+                        <button class="btn btn-lg btn-purple" data-toggle="modal"
+                                data-target="#exampleModal">заключить договор</button>
                     </div>
                     <div class="col-3">
                         <p class="price">99 900 ₽</p>
-                        <button class="btn btn-lg btn-purple">заключить договор</button>
+                        <button class="btn btn-lg btn-purple" data-toggle="modal"
+                                data-target="#exampleModal">заключить договор</button>
                     </div>
                 </div>
             </div>
@@ -249,7 +256,8 @@
                     договора купли-продажи.</p>
                 <p class="main-text highlight">Консультация юриста поможет снизить налоговую нагрузку и сэкономить ваши
                     деньги</p>
-                <button class="btn btn-lg btn-gradient mt-4">Заказать консультацию</button>
+                <button class="btn btn-lg btn-gradient mt-4" data-toggle="modal"
+                        data-target="#exampleModal">Заказать консультацию</button>
             </div>
             <div class="col-5">
                 <img src="./images/doc.png" alt=""><br>
@@ -303,7 +311,8 @@
                         <p class="main-header">210 100 ₽</p>
                     </div>
                     <div class="col-12 mt-3 text-center">
-                        <button class="btn btn-lg btn-white ">продать квартиру</button>
+                        <button class="btn btn-lg btn-white " data-toggle="modal"
+                                data-target="#exampleModal">продать квартиру</button>
                     </div>
                 </div>
 
@@ -583,7 +592,8 @@
                         </div>
                     </div>
                     <div class="col-12 text-center mt-4">
-                        <button class="btn btn-lg btn-gradient">Продать квартиру</button>
+                        <button class="btn btn-lg btn-gradient" data-toggle="modal"
+                                data-target="#exampleModal">Продать квартиру</button>
                     </div>
                 </div>
             </div>
@@ -713,6 +723,33 @@
 </section>
 
 <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3"><p>© 2018 местоРиэлтора</p></div>
+            <div class="col-12 col-md-2">
+                <a href="#">Инвесторам</a> <br>
+                <a href="#">Напишите директору</a>
+                <a href="#">Сотрудничество</a>
+            </div>
+            <div class="col-12 col-md-3">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Публичная оферта</a>
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-12 col-md-1">
+                <img src="./images/visa.png" alt="">
+
+            </div>
+            <div class="col-12 col-md-1">
+                <img src="./images/mc.png" alt="">
+            </div>
+            <div class="col-12 col-md-1">
+                <img src="./images/mir.png" alt="">
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.js"></script>
@@ -770,7 +807,7 @@
     })();
 </script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("[data-inputmask]").inputmask();
     });
 </script>
