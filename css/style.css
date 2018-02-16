@@ -21,6 +21,7 @@ a:hover {
 .btn {
     border-radius: 2rem;
     transition: all 0.3s;
+    font-family: SSP-bold;
 }
 
 .btn:hover {
@@ -76,6 +77,31 @@ a:hover {
 }
 
 .btn-purple:active {
+    background-color: rgb(113, 66, 183);
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-gradient {
+    background-image: -moz-linear-gradient(0deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-gradient:focus {
+    box-shadow: 0 0 0 0.2rem rgba(113, 66, 183, .25);
+}
+
+.btn-gradient:hover {
+    color: #fff;
+    background-color: rgb(113, 66, 183);
+}
+
+.btn-gradient:active {
     background-color: rgb(113, 66, 183);
     color: #fff;
     border-color: #fff;
@@ -300,9 +326,12 @@ section svg {
     height: 24px;
     bottom: -24px;
 }
-.economy{
+
+.economy {
     position: relative;
-    top: -15px;}
+    top: -15px;
+}
+
 .paper .main-text {
     font-size: 20px;
     font-family: SSP-bold;
@@ -455,3 +484,80 @@ section svg {
 }
 
 /*slider end*/
+
+.modal-dialog {
+    max-width: 361px;
+}
+
+.modal-content {
+    border: 0;
+}
+
+.modal-header {
+    background-image: -moz-linear-gradient(45deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    background-image: -webkit-linear-gradient(45deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    background-image: -ms-linear-gradient(45deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    color: #fff;
+}
+
+button.close {
+    background: url("../images/close.png");
+    background-position-y: 100%;
+    opacity: 0.6;
+    padding: 8px !important;
+    margin-top: -5px !important;
+    margin-right: -5px !important;
+    transition: all 0.3s;
+}
+
+button.close:hover {
+    opacity: 1;
+}
+
+.modal-title {
+    font-size: 32px;
+    font-family: SSP-bold;
+    color: rgb(255, 255, 255);
+}
+
+.invalid-feedback.up {
+    position: relative;
+    top: -102%;
+    text-align: right;
+    left: -6px;
+}
+
+input.form-control {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input.form-control:focus {
+    border-color: rgb(113, 66, 183);
+    box-shadow: none;
+
+}
+
+/*checkbox*/
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-label::before {
+    width: 18px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: white;
+    height: 18px;
+}
+
+.custom-control-label::after {
+    width: 17px;
+    border-radius: 4px;
+    height: 17px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: rgb(113, 66, 183);
+}
