@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -48,7 +49,7 @@
                                 Некорректный ввод данных
                             </div>
                         </div>
-                        <div class="col-12 mb-4">
+                        <div class="col-12 mb-4  ">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1" required>
                                 <label class="custom-control-label" for="customCheck1">
@@ -71,31 +72,38 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-4"><a href="#" class="logo">ВместоРиэлтора</a></div>
-            <div class="col"><img src="./images/svg/login.svg" class="mr-1 mb-1" alt="" width="16"> <a href="">
+            <div class="col-12 text-center text-xl-left col-xl-4 mb-3 mb-xl-0"><a href="#"
+                                                                                  class="logo">ВместоРиэлтора</a></div>
+            <div class="col-12 text-center text-xl-left col-xl mb-3 mb-xl-0"><img src="./images/svg/login.svg"
+                                                                                  class="mr-1 mb-1"
+                                                                                  alt="" width="16"> <a href="">
                 Войти</a></div>
-            <div class="col-3 ml-auto text-right"><a href="#" class="phone mb-3">+7 (495) 144-95-29</a><br>
-                <img src="./images/svg/phone.svg" width="16" class="mr-2" alt=""><a href="#" data-toggle="modal"
-                                                                                    data-target="#exampleModal">Заказать
+            <div class="col-12 ml-auto text-center text-xl-right col-xl-3"><a href="#" class="phone ">+7 (495)
+                144-95-29</a><br>
+                <img src="./images/svg/phone.svg" width="16" class="mr-2" alt="">
+                <a href="#" data-toggle="modal"
+                   data-target="#exampleModal">Заказать
                     обратный
                     звонок</a></div>
         </div>
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 text-center text-xl-left col-xl-8">
                 <h1 class="slogan">Поможем безопасно и выгодно продать квартиру</h1>
             </div>
-            <div class="col-7">
+            <div class=" col-12 col-xl-7 text-center text-xl-left">
                 <p>Возьмём на себя размещение рекламы, переговоры с потенциальными покупателями и юридическое
                     сопровождение на всех этапах работы</p>
             </div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-3">
-                <button class="btn btn-lg btn-white mt-5" data-toggle="modal"
+            <div class="col-12 col-xl-3 text-center text-xl-left">
+                <button class="btn btn-lg btn-white mt-5 mb-4" data-toggle="modal"
                         data-target="#exampleModal">Продать квартиру
                 </button>
             </div>
-            <div class="col-3 ml-auto text-center"><img src="./images/svg/analytics.svg" alt="" width="68" class="mb-2">
+            <div class="col-12  col-xl-3 ml-auto text-center mt-4 mt-xl-0"><img src="./images/svg/analytics.svg" alt=""
+                                                                                width="68"
+                                                                                class="mb-2">
                 <br>
                 <a href="#" class="border-bottom-primary-white zakaz" data-toggle="modal"
                    data-target="#exampleModal">Заказать бесплатную оценку квартиры</a><br>
@@ -114,33 +122,73 @@
                 </h1>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-2 text-center opportunity">
+        <div class="row  mt-3 d-flex flex-nowrap d-xl-none pr-3 mobile-slider align-items-center">
+            <div class="col">
+                <div class=" prevBtn float-left"></div>
+            </div>
+            <div class="col-9 owl-carousel">
+                <div class="text-center opportunity">
+                    <img src="./images/1.png" alt="">
+                    <p>Персональный менеджер</p>
+                    <p>Ответит на все ваши вопросы</p>
+                </div>
+                <div class="text-center opportunity">
+                    <img src="./images/2.png" alt="">
+                    <p>Фотограф</p>
+                    <p>Сделает профессиональные фото вашей квартиры </p>
+                </div>
+                <div class="text-center opportunity">
+                    <img src="./images/3.png" alt="">
+                    <p>Копирайтер</p>
+                    <p>Напишет продающий текст про вашу квартиру</p>
+                </div>
+                <div class="text-center opportunity">
+                    <img src="./images/4.png" alt="">
+                    <p>Маркетолог </p>
+                    <p>Разместит рекламные объявления о продаже квартиры </p>
+                </div>
+                <div class="text-center opportunity">
+                    <img src="./images/5.png" alt="">
+                    <p>Специалист колл-центра</p>
+                    <p>Примет все входящие звонки </p>
+                </div>
+                <div class="text-center opportunity">
+                    <img src="./images/6.png" alt="">
+                    <p>Юрист</p>
+                    <p>Окажет юридическое сопровождение сделки</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class=" nextBtn float-left"></div>
+            </div>
+        </div>
+        <div class="row mt-5  d-none d-xl-flex">
+            <div class="col-8 mx-auto col-xl-2 text-center opportunity">
                 <img src="./images/1.png" alt="">
                 <p>Персональный менеджер</p>
                 <p>Ответит на все ваши вопросы</p>
             </div>
-            <div class="col-2 text-center opportunity">
+            <div class="col-8 mx-auto col-xl-2 text-center opportunity">
                 <img src="./images/2.png" alt="">
                 <p>Фотограф</p>
                 <p>Сделает профессиональные фото вашей квартиры </p>
             </div>
-            <div class="col-2 text-center opportunity">
+            <div class="col-8 mx-auto col-xl-2 text-center opportunity">
                 <img src="./images/3.png" alt="">
                 <p>Копирайтер</p>
                 <p>Напишет продающий текст про вашу квартиру</p>
             </div>
-            <div class="col-2 text-center opportunity">
+            <div class="col-8 mx-auto col-xl-2 text-center opportunity">
                 <img src="./images/4.png" alt="">
                 <p>Маркетолог </p>
                 <p>Разместит рекламные объявления о продаже квартиры </p>
             </div>
-            <div class="col-2 text-center opportunity">
+            <div class="col-8 mx-auto col-xl-2 text-center opportunity">
                 <img src="./images/5.png" alt="">
                 <p>Специалист колл-центра</p>
                 <p>Примет все входящие звонки </p>
             </div>
-            <div class="col-2 text-center opportunity">
+            <div class="col-8 mx-auto col-xl-2 text-center opportunity">
                 <img src="./images/6.png" alt="">
                 <p>Юрист</p>
                 <p>Окажет юридическое сопровождение сделки</p>
@@ -158,12 +206,97 @@
                 </h1>
             </div>
         </div>
-        <div class="row mb-3 mt-5 text-center table-name">
+        <div class="row mb-3 mt-5 text-center table-name d-none d-xl-flex ">
             <div class="col-3 ml-auto">Резламная компания</div>
             <div class="col-3">При заключении договора</div>
             <div class="col-3">По факту продажи</div>
         </div>
-        <div class="row">
+        <div class="row  mt-3 d-flex flex-nowrap d-xl-none mobile-howmuch-slider align-items-center">
+            <div class="navigation">
+                <div class=" prevBtn float-left"></div>
+            </div>
+            <div class="col-10 mx-auto owl-carousel px-0">
+                <div class="text-center opportunity">
+                    <div class="row">
+                        <div class="col-7 mx-auto">
+                            <p class="main-text font-weight-bold text-center">Рекламная компания</p>
+                        </div>
+                        <div class="col-12 mt-3 text-left">
+                            <ul class="tick-list pr-3 pl-5">
+                                <li> Оценка квартиры</li>
+                                <li> Профессиональные фото и план вашей квартиры</li>
+                                <li> Продающий текст для объявления</li>
+                                <li> Реклама вашей квартиры на Авито, Циан, и ещё 30+ профильных сайтах</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 justify-content-center">
+                            <p class="price text-center">9 900 ₽</p>
+                            <button class="btn btn-lg btn-purple mx-auto" data-toggle="modal"
+                                    data-target="#exampleModal">заключить договор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center opportunity">
+                    <div class="row">
+                        <div class="col-7 mx-auto">
+                            <p class="main-text font-weight-bold text-center">При заключении договора</p>
+                        </div>
+                        <div class="col-12 mt-3 text-left">
+                            <ul class="tick-list pr-3 pl-5">
+                                <li> Оценка квартиры</li>
+                                <li> Профессиональные фото и план вашей квартиры</li>
+                                <li> Продающий текст для объявления</li>
+                                <li> Реклама вашей квартиры на Авито, Циан, и ещё 30+ профильных сайтах</li>
+                                <li> Личный менеджер</li>
+                                <li> Приём звонков от покупателей</li>
+                                <li> Проведение безопасной сделки</li>
+                                <li> Доступ к онлайн-платформе: отчёты, время показа квартиры, обратная связь с
+                            </ul>
+                        </div>
+                        <div class="col-12 justify-content-center">
+                            <p class="price text-center">49 900 ₽</p>
+                            <button class="btn btn-lg btn-purple mx-auto" data-toggle="modal"
+                                    data-target="#exampleModal">заключить договор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center opportunity">
+                    <div class="row">
+                        <div class="col-7 mx-auto">
+                            <p class="main-text font-weight-bold text-center">По факту продажи</p>
+                        </div>
+                        <div class="col-12 mt-3 text-left">
+                            <ul class="tick-list pr-3 pl-5">
+                                <li> Оценка квартиры</li>
+                                <li> Профессиональные фото и план вашей квартиры</li>
+                                <li> Продающий текст для объявления</li>
+                                <li> Реклама вашей квартиры на Авито, Циан, и ещё 30+ профильных сайтах</li>
+                                <li> Личный менеджер</li>
+                                <li> Приём звонков от покупателей</li>
+                                <li> Проведение безопасной сделки</li>
+                                <li> Доступ к онлайн-платформе: отчёты, время показа квартиры, обратная связь с
+                                    покупателями
+                                </li>
+                                <li> Оплата по факту продажи квартиры</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 justify-content-center">
+                            <p class="price text-center">99 900 ₽</p>
+                            <button class="btn btn-lg btn-purple mx-auto" data-toggle="modal"
+                                    data-target="#exampleModal">заключить договор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class=" nextBtn float-left"></div>
+            </div>
+        </div>
+
+        <div class="row d-none d-xl-flex">
             <div class="col-12 pl-0 table-shadow">
                 <div class="row table-row">
                     <div class="col-3">Оценка квартиры</div>
@@ -251,7 +384,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-7">
+            <div class="col-12 col-xl-7">
                 <h1 class="main-header">
                     Поможем провести безопасную сделку
                 </h1>
@@ -264,8 +397,8 @@
                         data-target="#exampleModal">Заказать консультацию
                 </button>
             </div>
-            <div class="col-5">
-                <img src="./images/doc.png" alt=""><br>
+            <div class="col-12 col-xl-5 mt-3 mt-xl-0">
+                <img src="./images/doc.png" alt="" class="img-fluid"><br>
                 <p class="sub-text text-center">Подготовим все необходимые документы</p>
             </div>
         </div>
@@ -274,12 +407,12 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-5">
-                <img src="./images/bigdata.png" alt="">
+            <div class="col-12 col-xl-5">
+                <img class="img-fluid" src="./images/bigdata.png" alt="">
                 <p class="sub-text mt-2">Предоставляем оценку квартиры на основе Big Data</p>
 
             </div>
-            <div class="col-7">
+            <div class="col-12 col-xl-7">
                 <h1 class="main-header ">
                     Вы сами определяете стоимость квартиры
                 </h1>
@@ -296,23 +429,25 @@
 <!--booster-->
 <section>
     <div class="container">
-        <div class="row">
-            <div class="col-8 mx-auto booster">
+        <div class="row px-3">
+            <div class="col-12 col-xl-8 mx-auto booster">
                 <div class="row">
                     <div class="col-12">
                         <h1 class="main-header text-center">С нами выгодно</h1>
                     </div>
-                    <div class="col-10 mx-auto mt-4">
+                    <div class="col-12 mx-auto mt-4">
                         <p class="main-text text-center mb-2">Укажите примерную стоимость вашей квартиры <br>
                             С нашей помощью вы можете сэкономить примерно 260 000 ₽</p>
                         <p class="text-center sub-text"> Сравнивается с комиссией 2%, но не менее 150 000 ₽</p>
                     </div>
-                    <div class="col-5 ml-auto mt-3">
-                        <p class="main-text mb-0 text-right">Стоимость квартиры,млн. ₽ </p>
-                        <input type="number" class="input mt-2 float-right" value="13">
+                    <div class="col-12 col-xl-5 ml-auto mt-3 mb-3">
+                        <p class="main-text mb-0 text-center text-xl-right">Стоимость квартиры,млн. ₽ </p>
+                        <div class="d-flex justify-content-center justify-content-xl-end">
+                            <input type="number" class="input mt-2 mx-auto float-xl-right" value="13">
+                        </div>
                     </div>
-                    <div class="col-6 mt-3">
-                        <p class="main-text mb-0 economy">Экономия</p>
+                    <div class="col-12 col-xl-6 mt-3 text-center text-xl-left">
+                        <p class="main-text mb-0 economy text-center text-xl-left">Экономия</p>
                         <p class="main-header">210 100 ₽</p>
                     </div>
                     <div class="col-12 mt-3 text-center">
@@ -328,9 +463,9 @@
 </section>
 
 <section>
-    <div class="container px-0">
-        <div class="row">
-            <div class="col-7">
+    <div class="container px-xl-0">
+        <div class="row px-3">
+            <div class="col-12 col-xl-6 px-0">
                 <h1 class="main-header">
                     Делаем качественно
                 </h1>
@@ -342,7 +477,7 @@
                     Мы готовим максимально полную и честную картину <br> для покупателей.
                 </p>
             </div>
-            <div class="col-5 different-image-container">
+            <div class="col-12 col-xl-5 different-image-container">
                 <div class="different-image"></div>
                 <span id="image-slider"></span>
             </div>
@@ -353,7 +488,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-12 col-xl-8 mx-auto">
                 <h1 class="main-header text-center">
                     Разместим рекламу вашей квартиры
                 </h1>
@@ -361,11 +496,12 @@
                     самостоятельно выбрать дополнительные рекламных опции.</p>
             </div>
         </div>
-        <div class="row d-flex align-items-center mt-4 slider1">
-            <div class="col text-right mr-5 ">
+        <!--desktop slider-->
+        <div class="row d-none d-xl-flex align-items-center ads-slider mt-4 slider1">
+            <div class="col text-right mr-xl-5 ">
                 <div class="ml-auto prevBtn"></div>
             </div>
-            <div class="col-10 mx-auto">
+            <div class="col-8 col-xl-10 mx-auto d-none d-xl-block">
                 <div class="owl-carousel owl-theme">
                     <div>
                         <div class="row">
@@ -414,72 +550,98 @@
                     </div>
                 </div>
             </div>
-            <div class="col ml-5">
+            <div class="col ml-xl-5">
                 <div class="nextBtn"></div>
             </div>
             <div class="w-100"></div>
-            <div class="col mx-auto" id="slidernav"></div>
         </div>
+
+        <!--mobile slider-->
+        <div class="row d-flex align-items-center mobile-ads-slider mt-4 d-xl-none">
+            <div class="col text-right mr-xl-5 ">
+                <div class="ml-auto prevBtn"></div>
+            </div>
+            <div class="col-8 col-xl-10 mx-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="d-xl-none"><img src="./images/domofond.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/cian.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/avito.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/ya.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/jcat.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/mirkvartir.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/mlsn.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/kazned.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/capital-region.png" alt="" width=""></div>
+                    <div class="d-xl-none"><img src="./images/irvr.png" alt="" width=""></div>
+                </div>
+            </div>
+            <div class="col ml-xl-5">
+                <div class="nextBtn"></div>
+            </div>
+            <div class="w-100"></div>
+        </div>
+
     </div>
 </section>
 
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row px-3">
             <div class="col-12">
                 <h1 class="main-header text-center">
                     Разделим с вами задачи
                 </h1>
             </div>
-            <div class="col-12 paper mt-3">
-                <div class="row">
-                    <div class="col-1 text-right"><span class="whois px-3 py-2">Мы</span></div>
-                    <div class="col-5">
+            <div class="col-12 paper  mt-3">
+                <div class="row ">
+                    <div class="col-1 order-1 col-xl-1 text-xl-right"><span class="whois px-3 py-2">Мы</span></div>
+                    <div class="col-12 order-1 col-xl-5">
                         <p class="main-text">Оцениваем вашу квартиру</p>
                         <p class="secondary-text">Используем BigData для получения максимально точной оценки</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+                    <div class="w-100 order-1"></div>
+                    <div class="col-1 order-2 d-none d-xl-flex"></div>
+                    <div class="col-12 order-2 col-xl-5">
                         <p class="main-text">Проводим профессиональную фотосъёмку</p>
                         <p class="secondary-text">Хорошие фотографии производят правильное первое впечатление</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+                    <div class="w-100 order-2"></div>
+                    <div class="col-1 order-3 d-none d-xl-flex"></div>
+                    <div class="col-12 order-3 col-xl-5">
                         <p class="main-text">Пишем продающий текст</p>
                         <p class="secondary-text">Покупатели с большим доверием и интересом относятся к развёрнут</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+                    <div class="w-100 order-3"></div>
+                    <div class="col-1 order-4 d-none d-xl-flex"></div>
+                    <div class="col-12 order-4 col-xl-5">
                         <p class="main-text">Рекламируем вашу квартиру</p>
                         <p class="secondary-text">Размещаем объявления на более чем 70 сайтах о недвижимости</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+                    <div class="w-100 order-4"></div>
+                    <div class="col-1 order-5 d-none d-xl-flex"></div>
+                    <div class="col-12 order-5 col-xl-5">
                         <p class="main-text">Общаемся с покупателями</p>
                         <p class="secondary-text">Принимаем звонки, фильтруем спам и согласуем с вами удобное вре</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1  text-right ml-auto"><span class="whois  px-3 py-2">Вы</span></div>
-                    <div class="col-5">
+                    <div class="w-100 order-5"></div>
+                    <div class="col-1 order-last order-xl-6 text-right ml-xl-auto"><span
+                            class="whois  px-3 py-2">Вы</span></div>
+                    <div class="col-12 order-last order-xl-6 col-xl-5">
                         <p class="main-text">Показываете квартиру</p>
                         <p class="secondary-text">Никто лучше вас не сможет показать вашу квартиру <br>
                             <a href="#">Нет времени на показы?</a>
                         </p>
 
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+                    <div class="w-100 order-6"></div>
+                    <div class="col-1 order-7 d-none d-xl-flex"></div>
+                    <div class="col-12 order-7 col-xl-5">
                         <p class="main-text">Получаем обратную связь</p>
                         <p class="secondary-text">Мы будем на связи с каждым, кто смотрел вашу квартиру</p>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+                    <div class="w-100 order-7"></div>
+                    <div class="col-1 d-none order-8 d-xl-flex"></div>
+                    <div class="col-12 col-xl-5 order-8">
                         <p class="main-text">Берём на себя юридические вопросы</p>
                         <p class="secondary-text">Подготовим документы и ответим на все вопросы</p>
                     </div>
@@ -498,9 +660,9 @@
                     Почему "вместоРиэлтора"?
                 </h1>
             </div>
-            <div class="col-8 mx-auto mt-5">
-                <div class="row">
-                    <div class="col-6 mt-4">
+            <div class="col-11 col-xl-8 mx-auto mt-3 mt-xl-5">
+                <div class="row pl-3 pl-xl-0">
+                    <div class="col-12 col-xl-6 mt-4">
                         <div class="row">
                             <div class="col-2">
                                 <img src="./images/i1-shield.png" alt="">
@@ -516,7 +678,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-12 col-xl-6 mt-4">
                         <div class="row">
                             <div class="col-2">
                                 <img src="./images/i2-hourglass.png" alt="">
@@ -532,7 +694,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-12 col-xl-6 mt-4">
                         <div class="row">
                             <div class="col-2">
                                 <img src="./images/i3-analytics.png" alt="">
@@ -549,7 +711,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-12 col-xl-6 mt-4">
                         <div class="row">
                             <div class="col-2">
                                 <img src="./images/i4-money.png" alt="">
@@ -566,7 +728,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-12 col-xl-6 mt-4">
                         <div class="row">
                             <div class="col-2">
                                 <img src="./images/i5-pig.png" alt="">
@@ -582,7 +744,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-12 col-xl-6 mt-4">
                         <div class="row">
                             <div class="col-2">
                                 <img src="./images/i6-medal.png" alt="">
@@ -594,7 +756,7 @@
                             </div>
                             <div class="col-12">
                                 <p class="description"><span class="font-weight-bold">4,98</span> — <a
-                                        href="#">средняя</a> оценка клиентами нашей работы</p>
+                                        href="#">средняя оценка</a> клиентами нашей работы</p>
                             </div>
                         </div>
                     </div>
@@ -619,8 +781,8 @@
             </div>
 
         </div>
-
-        <div class="row d-flex align-items-center mt-4 slider2">
+        <!--desktop slider-->
+        <div class="row d-none d-xl-flex align-items-center feedback-slider mt-4 slider2">
             <div class="col-1 text-right ">
                 <div class=" prevBtn float-left"></div>
             </div>
@@ -639,14 +801,18 @@
                                     своим знакомым и, в случае необходимости, обязательно обратимся ещё раз!</p>
                             </div>
 
-                            <div class="col-1"></div>
-                            <div class="col mt-2"><p class="main-text font-weight-bold mb-1">Наумова Анна
+                            <div class="col-12 col-xl mt-2 offset-xl-1 text-center text-xl-left"><p
+                                    class="main-text font-weight-bold mb-1 text-center text-xl-left">Наумова Анна
                                 Анатольевна</p>
                                 <p>12 января 2018</p></div>
-                            <div class="col-4 ml-auto d-flex flex-nowrap align-items-center px-0 mt-0 economy"><img
-                                    src="./images/i5-pig.png" alt="" width="35" height="35"
-                                    style="width: 35px;height: auto;" class="mr-3"><span
-                                    class="main-text">Сэкономлено <span class="font-weight-bold">234 234 ₽</span></span>
+                            <div class="col-12 col-xl-4 ml-xl-auto d-flex flex-wrap justify-content-center flex-xl-nowrap align-items-center px-0 mt-0 economy text-center text-xl-left">
+                                <img
+                                        src="./images/i5-pig.png" alt="" width="35" height="35"
+                                        style="width: 35px;height: auto;" class="mr-3">
+                                <div class="w-100"></div>
+                                <span
+                                        class="main-text">Сэкономлено <span
+                                        class="font-weight-bold">234 234 ₽</span></span>
                             </div>
                         </div>
                     </div>
@@ -661,13 +827,18 @@
                             </div>
 
                             <div class="col-1"></div>
-                            <div class="col mt-2"><p class="main-text font-weight-bold mb-1">Наумова Анна
+                            <div class="col-12 col-xl mt-2 offset-xl-1 text-center text-xl-left"><p
+                                    class="main-text font-weight-bold mb-1 text-center text-xl-left">Наумова Анна
                                 Анатольевна</p>
                                 <p>12 января 2018</p></div>
-                            <div class="col-4 ml-auto d-flex flex-nowrap align-items-center px-0 mt-0 economy"><img
-                                    src="./images/i5-pig.png" alt="" width="35" height="35"
-                                    style="width: 35px;height: auto;" class="mr-3"><span
-                                    class="main-text">Сэкономлено <span class="font-weight-bold">234 234 ₽</span></span>
+                            <div class="col-12 col-xl-4 ml-xl-auto d-flex flex-wrap justify-content-center flex-xl-nowrap align-items-center px-0 mt-0 economy text-center text-xl-left">
+                                <img
+                                        src="./images/i5-pig.png" alt="" width="35" height="35"
+                                        style="width: 35px;height: auto;" class="mr-3">
+                                <div class="w-100"></div>
+                                <span
+                                        class="main-text">Сэкономлено <span
+                                        class="font-weight-bold">234 234 ₽</span></span>
                             </div>
                         </div>
                     </div>
@@ -685,13 +856,18 @@
                             </div>
 
                             <div class="col-1"></div>
-                            <div class="col mt-2"><p class="main-text font-weight-bold mb-1">Наумова Анна
+                            <div class="col-12 col-xl mt-2 offset-xl-1 text-center text-xl-left"><p
+                                    class="main-text font-weight-bold mb-1 text-center text-xl-left">Наумова Анна
                                 Анатольевна</p>
                                 <p>12 января 2018</p></div>
-                            <div class="col-4 ml-auto d-flex flex-nowrap align-items-center px-0 mt-0 economy"><img
-                                    src="./images/i5-pig.png" alt="" width="35" height="35"
-                                    style="width: 35px;height: auto;" class="mr-3"><span
-                                    class="main-text">Сэкономлено <span class="font-weight-bold">234 234 ₽</span></span>
+                            <div class="col-12 col-xl-4 ml-xl-auto d-flex flex-wrap justify-content-center flex-xl-nowrap align-items-center px-0 mt-0 economy text-center text-xl-left">
+                                <img
+                                        src="./images/i5-pig.png" alt="" width="35" height="35"
+                                        style="width: 35px;height: auto;" class="mr-3">
+                                <div class="w-100"></div>
+                                <span
+                                        class="main-text">Сэкономлено <span
+                                        class="font-weight-bold">234 234 ₽</span></span>
                             </div>
                         </div>
                     </div>
@@ -702,58 +878,157 @@
             </div>
             <div class="w-100"></div>
         </div>
+        <!--mobile slider-->
+        <div class="row  mt-3 d-flex flex-nowrap d-xl-none feedback-mobile-slider align-items-center">
+            <div class="navigation">
+                <div class=" prevBtn float-left"></div>
+            </div>
+            <div class="col-10 mx-auto owl-carousel px-0">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="main-text">Хотела бы выразить огромную благодарность «ВместоРиэлтора» за
+                            индивидуальный подход, исключительные профессиональные качества, добросовестное и
+                            качественное отношение к сопровождению сделок, связанных с продажей нашей двухкомнатной
+                            квартиры на улице Ефремова.
+                            Желаем удачи и дальнейших профессиональных успехов! Будем рекомендовать всем своим знакомым
+                            и, в случае необходимости, обязательно обратимся ещё раз!</p>
+                    </div>
+                    <div class="col-8 mx-auto text-center">
+                        <p class="main-text text-center font-weight-bold">Наумова Анна Анатольевна</p>
+                        <p>12 января</p>
+                        <img src="./images/piggy.png" height="28" alt="" style="width:auto;margin: auto;">
+                        <p
+                                class="main-text text-center">Сэкономлено <span
+                                class="font-weight-bold">234 234 ₽</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="main-text">Хотела бы выразить огромную благодарность «ВместоРиэлтора» за
+                            индивидуальный подход, исключительные профессиональные качества, добросовестное и
+                            качественное отношение к сопровождению сделок, связанных с продажей нашей двухкомнатной
+                            квартиры на улице Ефремова.
+                            Желаем удачи и дальнейших профессиональных успехов! Будем рекомендовать всем своим знакомым
+                            и, в случае необходимости, обязательно обратимся ещё раз!</p>
+                    </div>
+                    <div class="col-8 mx-auto text-center">
+                        <p class="main-text text-center font-weight-bold">Наумова Анна Анатольевна</p>
+                        <p>12 января</p>
+                        <img src="./images/piggy.png" height="28" alt="" style="width:auto;margin: auto;">
+                        <p
+                                class="main-text text-center">Сэкономлено <span
+                                class="font-weight-bold">234 234 ₽</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="main-text">Хотела бы выразить огромную благодарность «ВместоРиэлтора» за
+                            индивидуальный подход, исключительные профессиональные качества, добросовестное и
+                            качественное отношение к сопровождению сделок, связанных с продажей нашей двухкомнатной
+                            квартиры на улице Ефремова.
+                        </p>
+                    </div>
+                    <div class="col-8 mx-auto text-center">
+                        <p class="main-text text-center font-weight-bold">Наумова Анна Анатольевна</p>
+                        <p>12 января</p>
+                        <img src="./images/piggy.png" height="28" alt="" style="width:auto;margin: auto;">
+                        <p
+                                class="main-text text-center">Сэкономлено <span
+                                class="font-weight-bold">234 234 ₽</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class=" nextBtn float-left"></div>
+            </div>
+        </div>
+
     </div>
 </section>
 <!--faq-->
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center">
             <div class="col-12">
                 <h1 class="main-header text-center">
                     Часто задаваемые вопросы
                 </h1>
             </div>
-            <div class="col-8 mx-auto mt-4">
-                <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk"  frameborder="0" class="video-block"
+        </div>
+        <div class="row d-none d-xl-block">
+            <div class="col-8 px-0 col-xl-8 mx-xl-auto mt-4 px-xl-3">
+                <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk" frameborder="0" class="video-block"
                         allowfullscreen></iframe>
                 <p class="video-description">1st video</p>
             </div>
-            <div class="col-8 mx-auto videos">
+            <div class="col-8 mx-auto videos d-none d-xl-block">
                 <div class="row">
-                    <div class="col-3 video-gallery active" uLink="https://www.youtube.com/embed/SPauxWv1Rnk" description="1st video"> <img src="./images/capital-region.png" alt=""></div>
-                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/i6hhBVXQK2o" description="2nd video"><img src="./images/capital-region.png" alt=""></div>
-                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/IadZs2u_jy0" description="3rd video"><img src="./images/capital-region.png" alt=""></div>
-                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/a0vgIRaFnZA" description="4th video"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery active" uLink="https://www.youtube.com/embed/SPauxWv1Rnk"
+                         description="1st video"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/i6hhBVXQK2o"
+                         description="2nd video"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/IadZs2u_jy0"
+                         description="3rd video"><img src="./images/capital-region.png" alt=""></div>
+                    <div class="col-3 video-gallery" uLink="https://www.youtube.com/embed/a0vgIRaFnZA"
+                         description="4th video"><img src="./images/capital-region.png" alt=""></div>
                 </div>
             </div>
         </div>
+        <div class="row  mt-3 d-flex flex-nowrap d-xl-none pr-3 faq-slider align-items-center">
+            <div class="col">
+                <div class=" prevBtn float-left"></div>
+            </div>
+            <div class="col-9 owl-carousel">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk" frameborder="0" class="video-block"
+                            allowfullscreen></iframe>
+                    <p class="video-description">1st video</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk" frameborder="0" class="video-block"
+                            allowfullscreen></iframe>
+                    <p class="video-description">1st video</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk" frameborder="0" class="video-block"
+                            allowfullscreen></iframe>
+                    <p class="video-description">1st video</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/SPauxWv1Rnk" frameborder="0" class="video-block"
+                            allowfullscreen></iframe>
+                    <p class="video-description">1st video</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class=" nextBtn float-left"></div>
+            </div>
+        </div>
+
     </div>
 </section>
 
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-3"><p>© 2018 вместоРиэлтора</p></div>
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-3 text-center text-xl-left"><p>© 2018 вместоРиэлтора</p></div>
+            <div class="col-12 col-md-2 text-center text-xl-left">
                 <a href="#">Инвесторам</a> <br>
-                <a href="#">Напишите директору</a>
+                <a href="#">Напишите директору</a> <br>
                 <a href="#">Сотрудничество</a>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 text-center text-xl-left">
                 <a href="#">Политика конфиденциальности</a>
                 <a href="#">Публичная оферта</a>
             </div>
-            <div class="col-1">
-
-            </div>
-            <div class="col-12 col-md-1 mt-2">
+            <div class="col-4 col-md-1 mt-2 offset-xl-1">
                 <img src="./images/visa.png" alt="">
 
             </div>
-            <div class="col-12 col-md-1  mt-2">
+            <div class="col-4 col-md-1  mt-2">
                 <img src="./images/mc.png" alt="">
             </div>
-            <div class="col-12 col-md-1  mt-2">
+            <div class="col-4 col-md-1  mt-2">
                 <img src="./images/mir.png" alt="">
             </div>
         </div>
@@ -763,36 +1038,115 @@
 <script src="./js/bootstrap.bundle.js"></script>
 <script src="./js/jquery.inputmask.bundle.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
+<!--слайдеры-->
 <script>
     $(document).ready(function () {
-        $(".owl-carousel").eq(0).owlCarousel({
+
+        $(".mobile-slider .owl-carousel").owlCarousel({
+            autoHeight: true,
             items: 1,
             loop: true,
-            dots: true
+            dots: false
         });
-        $(".owl-carousel").eq(1).owlCarousel({
+        $('.mobile-slider').find('.nextBtn').on('click', function () {
+            $(".owl-carousel").eq(0).trigger('next.owl.carousel');
+        });
+        $('.mobile-slider').find('.prevBtn').on('click', function () {
+            $(".owl-carousel").eq(0).trigger('prev.owl.carousel');
+        });
+
+
+        $('.mobile-howmuch-slider .owl-carousel').owlCarousel({
+            autoHeight: true,
+            items: 1
+        });
+        $('.mobile-howmuch-slider ').find('.nextBtn').on('click', function () {
+            $(".mobile-howmuch-slider .owl-carousel").trigger('next.owl.carousel');
+        });
+        $('.mobile-howmuch-slider ').find('.prevBtn').on('click', function () {
+            $(".mobile-howmuch-slider .owl-carousel").trigger('prev.owl.carousel');
+        });
+
+
+        $(".mobile-ads-slider .owl-carousel").owlCarousel({
+            responsive: {
+                0: {
+                    items: 1,
+                    loop: true,
+                    dots: false
+                },
+                1200: {
+                    items: 1,
+                    loop: true,
+                    dots: true
+                }
+            }
+        });
+        $('.mobile-ads-slider').find('.nextBtn').on('click', function () {
+
+            $(".mobile-ads-slider .owl-carousel").trigger('next.owl.carousel');
+        });
+        $('.mobile-ads-slider').find('.prevBtn').on('click', function () {
+
+            $(".mobile-ads-slider .owl-carousel").trigger('prev.owl.carousel');
+        });
+
+        $(".ads-slider .owl-carousel").owlCarousel({
+            responsive: {
+                0: {
+                    items: 1,
+                    loop: true,
+                    dots: false
+                },
+                1200: {
+                    items: 1,
+                    loop: true,
+                    dots: true
+                }
+            }
+        });
+        $('.ads-slider').find('.nextBtn').on('click', function () {
+            $(".ads-slider .owl-carousel").trigger('next.owl.carousel');
+        });
+        $('.ads-slider').find('.prevBtn').on('click', function () {
+            $(".ads-slider .owl-carousel").trigger('prev.owl.carousel');
+        });
+
+        $('.feedback-mobile-slider .owl-carousel').owlCarousel({
+            autoHeight: true,
+            items: 1
+        });
+        $('.feedback-mobile-slider ').find('.nextBtn').on('click', function () {
+            $(".feedback-mobile-slider .owl-carousel").trigger('next.owl.carousel');
+        });
+        $('.feedback-mobile-slider ').find('.prevBtn').on('click', function () {
+            $(".feedback-mobile-slider .owl-carousel").trigger('prev.owl.carousel');
+        });
+
+        $('.feedback-slider .owl-carousel').owlCarousel({
+            autoHeight: true,
+            items: 1
+        });
+        $('.feedback-slider ').find('.nextBtn').on('click', function () {
+            $(".feedback-slider .owl-carousel").trigger('next.owl.carousel');
+        });
+        $('.feedback-slider ').find('.prevBtn').on('click', function () {
+            $(".feedback-slider .owl-carousel").trigger('prev.owl.carousel');
+        });
+
+        $(".faq-slider .owl-carousel").owlCarousel({
+            autoHeight: true,
             items: 1,
             loop: true,
-            dots: true
+            dots: false
+        });
+        $('.faq-slider').find('.nextBtn').on('click', function () {
+            $(".faq-slider .owl-carousel").trigger('next.owl.carousel');
+        });
+        $('.faq-slider').find('.prevBtn').on('click', function () {
+            $(" .faq-slider .owl-carousel").trigger('prev.owl.carousel');
         });
     });
-    $('.slider1').find('.nextBtn').on('click', function () {
-
-        $(".owl-carousel").eq(0).trigger('next.owl.carousel');
-    })
-    $('.slider1').find('.prevBtn').on('click', function () {
-
-        $(".owl-carousel").eq(0).trigger('prev.owl.carousel');
-    })
-
-    $('.slider2').find('.nextBtn').on('click', function () {
-
-        $(".owl-carousel").eq(1).trigger('next.owl.carousel');
-    })
-    $('.slider2').find('.prevBtn').on('click', function () {
-
-        $(".owl-carousel").eq(1).trigger('prev.owl.carousel');
-    })
 </script>
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -826,24 +1180,24 @@
         containment: true
     })
     var widthSlider = parseInt($('.different-image').css('width'));
-    $draggable.on( 'dragEnd', function( event, pointer ) {
+    $draggable.on('dragEnd', function (event, pointer) {
         widthSlider = parseInt($('.different-image').css('width'));
     });
-    $draggable.on( 'pointerMove', function( event, pointer, moveVector ) {
+    $draggable.on('pointerMove', function (event, pointer, moveVector) {
         var thisx = moveVector.x;
         $('.different-image').css('width', widthSlider + thisx + 'px');
     })
 </script>
 <!--video gallery-->
 <script>
-    $('.video-gallery').on('click',function () {
+    $('.video-gallery').on('click', function () {
         var uLink = $(this).attr('uLink');
         var description = $(this).attr('description');
 
         $('.video-gallery.active').removeClass('active');
         $(this).addClass('active');
 
-        $('.video-block').attr('src',uLink);
+        $('.video-block').attr('src', uLink);
         $('.video-description').text(description);
 
     })
