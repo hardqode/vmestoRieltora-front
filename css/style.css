@@ -748,9 +748,18 @@ footer a:hover {
     .container{
         max-width: 720px;
     }
+    .different-image-container{
+        min-height: 451px;
+    }
+    .video-block{
+        min-height: 270px;
+    }
 }
 @media (min-width: 1200px){
     .container {
         max-width: 1140px;
+    }
+    .different-image-container{
+        min-height: 320px;
     }
 }
