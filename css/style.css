@@ -762,4 +762,7 @@ footer a:hover {
     .different-image-container{
         min-height: 320px;
     }
+    .video-block{
+        min-height: 420px;
+    }
 }
