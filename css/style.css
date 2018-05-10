@@ -117,7 +117,13 @@ a:hover {
     color: #fff;
     border-color: #fff;
 }
-
+.button-shadow{
+    box-shadow: 0px 8px 20px rgba(20, 19, 21, 0.24);
+    transition: all .3s;
+}
+.button-shadow:hover,.button-shadow:focus{
+    box-shadow: 0px 6px 10px rgba(20, 19, 21, 0.24);
+}
 /*кнопки конец*/
 header {
     background-image: -moz-linear-gradient(45deg, rgba(113, 66, 183,.0) 0%, rgba(152, 79, 186,1) 100%);
@@ -180,7 +186,10 @@ header .logo {
     line-height: 1.2;
     border: 0 !important;
 }
-
+header .btn-white{
+    background: white;
+    color: rgb(113, 66, 183);
+}
 header .phone {
     font-family: SSP;
     font-size: 27px;
