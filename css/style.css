@@ -120,14 +120,19 @@ a:hover {
 
 /*кнопки конец*/
 header {
-    background-image: -moz-linear-gradient(45deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
-    background-image: -webkit-linear-gradient(45deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
-    background-image: -ms-linear-gradient(45deg, rgb(113, 66, 183) 0%, rgb(152, 79, 186) 100%);
+    background-image: -moz-linear-gradient(45deg, rgba(113, 66, 183,.0) 0%, rgba(152, 79, 186,1) 100%);
+    background-image: -webkit-linear-gradient(45deg, rgba(113, 66, 183,.0) 0%, rgba(152, 79, 186,1) 100%);
+    background-image: -ms-linear-gradient(45deg, rgba(113, 66, 183,.0) 0%, rgba(152, 79, 186,1) 100%);
     color: white;
     padding-top: 43px;
     padding-bottom: 112px;
+    position: relative;
 }
-
+header video {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
 .slogan {
     font-family: SSP-bold, sans-serif;
     font-size: 70px;
@@ -743,6 +748,9 @@ footer a:hover {
     .container{
         max-width: 320px;
     }
+    header video{
+        height: 870px;
+    }
 }
 @media (min-width: 767px) {
     .container{
@@ -754,6 +762,9 @@ footer a:hover {
     .video-block{
         min-height: 270px;
     }
+    header video{
+       height: 722px;
+    }
 }
 @media (min-width: 1200px){
     .container {
@@ -764,5 +775,9 @@ footer a:hover {
     }
     .video-block{
         min-height: 420px;
+    }
+    header video{
+        height: 770px;
+        max-height: 770px;
     }
 }
