@@ -131,9 +131,15 @@ header {
     background-image: -ms-linear-gradient(45deg, rgba(113, 66, 183,.0) 0%, rgba(152, 79, 186,1) 100%);
     color: white;
     padding-top: 43px;
-    padding-bottom: 112px;
+    padding-bottom: 40px;
     position: relative;
     overflow: hidden;
+}
+@media(min-width: 1199px){
+	header{
+
+    padding-bottom: 112px;
+	}
 }
 header video {
     position: absolute;
